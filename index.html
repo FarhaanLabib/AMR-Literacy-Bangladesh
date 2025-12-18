@@ -317,6 +317,8 @@
             position: relative;
             z-index: 2;
             border: 2px solid white;
+            text-decoration: none;
+            display: inline-block;
         }
         
         .join-us-card .btn:hover {
@@ -640,7 +642,9 @@
                         </div>
                         <h3>Join Us & Fight AMR</h3>
                         <p>Join our survey to help us understand antibiotic usage patterns and contribute to the fight against antimicrobial resistance. Your input is valuable!</p>
-                        <a href="" class="btn">Fill Out the Form</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4W9K2-2icuQSmHjriO_dLElo5kfli4-oT2F9yFCY0OBCStg/viewform?usp=dialog" 
+                           target="_blank" 
+                           class="btn">Fill Out the Form</a>
                     </div>
                     
                     <!-- Regular activity cards -->
@@ -843,12 +847,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.nav-links a[href="#home"]').classList.add('active');
             document.querySelector('.page-nav-links a[href="#home"]').classList.add('active');
-            
-            // Add click handler for the "Join Us" button
-            document.querySelector('.join-us-card .btn').addEventListener('click', function(e) {
-                e.preventDefault();
-                alert('Thank you for your interest! The survey form will be available soon. Please check back later or contact us for more information.');
-            });
         });
     </script>
 </body>
